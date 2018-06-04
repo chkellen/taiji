@@ -1,0 +1,68 @@
+.yin-yang {
+	width: 400px;
+	height: 400px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    border: 1px solid black;
+}
+.yin-yang::before{
+    content: "";
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background: black;
+}
+.yin-yang::after{
+    content: "";
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    background: white;
+}
+.yy1{
+    width: 200px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    left: 100px;
+    border-radius: 50%;
+}
+.yy2{
+    width: 200px;
+    height: 200px;
+    background: black;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.yy1:after{
+    content:"";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background: black;
+    z-index: 3;
+    border-radius: 50%;
+}
+.yy2:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    background: white;
+    z-index: 3;
+    border-radius: 50%;
+}
